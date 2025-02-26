@@ -1,3 +1,5 @@
+бесплатный сервер где можно развернуть веб приложение 
+с вот таким стеком 
 {
   "name": "real-time-chat",
   "version": "0.1.0",
@@ -19,6 +21,9 @@
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",
     "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
