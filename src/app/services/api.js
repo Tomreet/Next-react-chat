@@ -5,7 +5,7 @@ const getAuthHeader = () => {
 
 export const loadUsers = async () => {
     try {
-      const response = await fetch('http://localhost:3001/users.json')
+      const response = await fetch('https://next-react-chat.onrender.com/users.json')
   
       const text = await response.text();
   
@@ -27,7 +27,7 @@ export const loadUsers = async () => {
 
 export const saveUsers = async (users) => {
     try {
-      const response = await fetch('http://localhost:3001/users.json', {
+      const response = await fetch('https://next-react-chat.onrender.com/users.json', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(users),
@@ -47,7 +47,7 @@ export const saveUsers = async (users) => {
 
 export const loadChannels = async () => {
     try {
-      const response = await fetch('http://localhost:3001/channels.json', {
+      const response = await fetch('https://next-react-chat.onrender.com/channels.json', {
         headers: getAuthHeader()
       });
   
@@ -64,7 +64,7 @@ export const loadChannels = async () => {
 
 export const saveChannels = async (channels) => {
     try {
-      const response = await fetch('http://localhost:3001/channels.json', {
+      const response = await fetch('https://next-react-chat.onrender.com/channels.json', {
         method: 'PUT',
         headers: { 
           'Content-Type': 'application/json',
