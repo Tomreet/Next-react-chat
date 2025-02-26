@@ -8,7 +8,7 @@ const app = express();
 const server = require('http').createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:10000",
+    origin: "https://next-react-chat.onrender.com",
     methods: ["GET", "POST", "PUT"]
   }
 });
